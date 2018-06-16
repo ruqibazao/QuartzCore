@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Vw2-HD-aVj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="各位，本拉登带着他的伙伴、火药进房间了！！" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="pcy-Yq-tDn">
+                                <rect key="frame" x="5" y="485" width="216" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" id="fZH-hj-Aad" userLabel="planeView">
+                                <rect key="frame" x="-400" y="215" width="263" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane-tail.png" id="791-Jt-rg4">
+                                        <rect key="frame" x="84" y="2" width="178" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane-screw-1-1.png" id="wiw-oY-tZ4">
+                                        <rect key="frame" x="4" y="43" width="26" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane-head.png" id="L0T-zU-YTK">
+                                        <rect key="frame" x="9" y="54" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wso-i7-45R">
+                                <rect key="frame" x="15" y="458" width="52" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="plane"/>
+                                <connections>
+                                    <action selector="onClickPlays:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tk4-74-dq4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="6Gz-Th-gEX"/>
+                    <connections>
+                        <outlet property="imageView" destination="wiw-oY-tZ4" id="HSd-ZP-a5O"/>
+                        <outlet property="planeView" destination="fZH-hj-Aad" id="rO6-QN-bog"/>
+                        <outlet property="textconent" destination="pcy-Yq-tDn" id="VRL-sH-nSe"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-514" y="814"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="fvp-8S-kzF">
+            <objects>
+                <viewController id="hJs-gh-mVN" customClass="paoCheViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UrO-YL-B0K" customClass="draw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="XDu-dt-A9p">
+                                <rect key="frame" x="164" y="405" width="147" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="ecU-er-0V3">
+                                <rect key="frame" x="15" y="179" width="218" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="porche.png" id="jbN-dd-tvh">
+                                        <rect key="frame" x="9" y="8" width="200" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="porche-b1.png" id="mr5-8g-UZ0">
+                                        <rect key="frame" x="9" y="28" width="19" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="porche-f1.png" id="NoZ-sH-CXw">
+                                        <rect key="frame" x="96" y="52" width="27" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D4c-5v-5B8">
+                                <rect key="frame" x="119" y="480" width="106" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="轨道二"/>
+                                <connections>
+                                    <action selector="onClickPlay:" destination="hJs-gh-mVN" eventType="touchUpInside" id="lH1-iV-JRV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mWg-iH-lZm">
+                                <rect key="frame" x="5" y="480" width="106" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="线性轨道"/>
+                                <connections>
+                                    <action selector="sendCar:" destination="hJs-gh-mVN" eventType="touchUpInside" id="De4-aQ-kSK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="BJf-Zc-1I5"/>
+                    <connections>
+                        <outlet property="carViews" destination="ecU-er-0V3" id="L9r-FY-4jV"/>
+                        <outlet property="myView" destination="XDu-dt-A9p" id="Z4D-vz-6nI"/>
+                        <outlet property="tyre_b" destination="mr5-8g-UZ0" id="dUs-T1-Jw3"/>
+                        <outlet property="tyre_f" destination="NoZ-sH-CXw" id="Wyq-Da-lfJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MuI-aX-tqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176" y="814"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="USN-Ee-iAx">
+            <objects>
+                <viewController id="gWP-4w-7lZ" customClass="huahuaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6o-qm-VoM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zJI-8a-kPY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ND2-Yh-vx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="814"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Qkn-eJ-1R2">
+            <objects>
+                <tabBarController id="3mu-7X-jkX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lsl-kO-DXB"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Wbm-vV-W0V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="EpX-Zx-WI5"/>
+                        <segue destination="hJs-gh-mVN" kind="relationship" relationship="viewControllers" id="Lgc-oo-Vij"/>
+                        <segue destination="gWP-4w-7lZ" kind="relationship" relationship="viewControllers" id="iOa-Lt-Aqx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="szv-2N-gmw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-160" y="181"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l2J-uW-teY">
+            <objects>
+                <navigationController id="Vw2-HD-aVj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pqp-M4-Htm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3mu-7X-jkX" kind="relationship" relationship="rootViewController" id="2YN-MZ-PVR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJl-dp-eim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-514" y="181"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plane-head.png" width="202" height="135"/>
+        <image name="plane-screw-1-1.png" width="96" height="129"/>
+        <image name="plane-tail.png" width="808" height="448"/>
+        <image name="porche-b1.png" width="35" height="67"/>
+        <image name="porche-f1.png" width="67" height="93"/>
+        <image name="porche.png" width="500" height="211"/>
+    </resources>
+</document>
